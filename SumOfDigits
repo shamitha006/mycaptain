@@ -1,0 +1,17 @@
+#include<stdio.h>
+int func(int num);
+int main()
+{
+int num,sum;
+printf("Enter a number whose sum of digits to be found out",num);
+scanf("%d",&num);
+printf("The sum of digits of %d is %d",num,sum);
+return 0;
+}
+int func(int num)
+{
+if(num==0)
+return 0;
+else
+return((num%10)+func(num/10));
+}
