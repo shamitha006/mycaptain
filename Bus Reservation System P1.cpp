@@ -1,4 +1,3 @@
-#include<conio.h>
 #include<cstdio>
 #include<iostream>
 #include<string.h>
@@ -7,7 +6,7 @@ using namespace std;
 static int p=0;
 class a
 {
-	char bus[5],driver[10],arrival[5],depart[5],from[10],to[10],seat[8][4][10];
+	char busn[5],driver[10],arrival[5],depart[5],from[10],to[10],seat[8][4][10];
 	public:
 		void install();
 		void allotment();
@@ -61,16 +60,11 @@ void a::allotment()
 				cout<<"\nThere are only 32 seats in this bus";
 			}
 			else
-			{
-				if(strcmp(bus[n].seat[seat/4][seat%4-1],"Empty"))==0
 				{
 					cout<<"Enter passenger's name:";
 					cin>>bus[n].seat[seat/4][(seat%4)-1];
 					break;
 				}
-				else
-				cout<<"The seat no. is already registered\n";
-			}
 		}
 		if(n>p)
 		{
@@ -112,7 +106,7 @@ void a::allotment()
 					a++;
 					if(strcmp(bus[n].seat[i][j],"Empty")!=0)
 					cout<<"\nThe seat no"<<(a-1)<<"is reversed for"<<bus[n];
-				
+				}
 			}
 		}
 		break;
@@ -194,4 +188,5 @@ int main()
 	}
 	return 0;
 }
+
 
