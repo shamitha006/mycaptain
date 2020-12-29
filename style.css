@@ -1,0 +1,126 @@
+h1{
+	text-align: center;
+	font-family: Courgette;
+	font-size: 83px;
+	color: green;
+
+}
+nav{
+	background-color: green;
+}
+h3{
+	text-align: center;
+	font-family: Yellowtail;
+	border-color: green;
+}
+p{
+	color: brown;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Yellowtail', cursive;
+}
+h2{
+	text-align: center;
+	border-color: green;
+	color: green;
+	font-size: 50px;
+	font-family: 'Bangers', cursive;
+
+}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+</style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #81c644;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.wrapper{
+	margin-top: 10%;
+}
+.wrapper h1{
+	font-family: 'Allura', cursive;
+	font-size: 52px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.about{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.about .about_member{
+	background: #fff;
+	margin: 5px;
+	marker-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+}
+.about .about_member h3{
+	color: #81c644;
+	font-size: 26px;
+	margin-top: 50px;
+}
+.about .about_image img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	padding: 10px;
+}
+.thought{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.thought .thought_member{
+	background: #fff;
+	margin: 5px;
+	marker-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+}
+.thought .thought_member h3{
+	color: #81c644;
+	font-size: 26px;
+	margin-top: 50px;
+}
+.thought .thought_image img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	padding: 10px;
+}
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+</style>
