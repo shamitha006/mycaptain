@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <title>BMSCE IEEE PES</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="data:image/jpeg;base64,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" alt="" width="75" height="65" class="d-inline-block align-top">
+      <br>IEEE BMSCE PES
+    </a>
+  </div>
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Join</a>      
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>      
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1495291916458-c12f594151e7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGlubm92YXRpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="This image cannot be displayed" width="500px" height="550px">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1547517231-6e8c9e851aa6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGN1cmlvc2l0eXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="This image cannot be displayed" width="500px" height="550px">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="This image cannot be displayed" width="500px" height="550px">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<div class="wrapper">
+  <h1>ABOUT US</h1>
+  <div class="about">
+    <div class="about_member">
+      <div class="about_image">
+        <img src="https://r10.ieee.org/bangalore-pes/wp-content/uploads/sites/54/2020/03/IEEE-PES-Bangalore-Chapter-Logo.png">
+      </div>
+      <br>
+      <br>
+      <h3>Imagination Is Everything</h3>
+      <p>The Power and Energy Society is the world’s largest forum for sharing the latest technological developments in the electric power industry. This Society provides a great platform to empower development of technology & software in all areas of Electric Power and Energy including generation, transmission, distribution and utilization to provide a reliable, resilient, safe, cost-effective and sustainable electricity supply system to the end-user.
+Energy Conservation is a need of the hour. PES funds research in sustainable sources of energy. </p>
+    </div>
+     <div class="about_member">
+      <div class="about_image">
+        <img src="https://media.licdn.com/dms/image/C560BAQG36OSYgA7wCA/company-logo_200_200/0?e=2159024400&v=beta&t=sOCpVnUGLC3Fd7OK7-3piUuvNPT_w5tvyCo9u61PlqY">
+      </div>
+      <br>
+      <br>
+      <h3>We Grow To <br>Inspire</h3>
+      <p>Imagination is Everything.It let's us go beyond the reality. The ability to create new ideas. The power of forming something new. The ability to deal with our problems, something that guides us everywhere. The desire to create something new ,something unique has brought you to us ,we have the power to help you.We grow to Inspire.</p>
+    </div>
+     <div class="about_member">
+      <div class="about_image">
+        <img src="https://lh3.googleusercontent.com/proxy/9eQlQ45FhS1Tzsohk9vkJIZkP8H9rzyI_F9JEUz7Go2KqSbmflXi_BAR--BvQE4cyploQ4e5tSQLpTmut358CaKfW2_h">
+      </div>
+      <br>
+      <br>
+      <h3>We Grow To <br>Inspire</h3>
+      <p>Institute for Electrical and Electronics Engineers is an entity aimed at inculcating the sprirt of wisdom and knowledge. BMSCE IEEE Student Branch was founded in 2009 under the guidance of our first branch counselor and former vice principal, Dr. Ravishankar Deekshit. The founding chair for the student branch was Ashwith Jerome Rego of the EEE department. With events and workshops being conducted throughout the year, we make sure our members are kept up to date with the evolving needs of our technological world.
+In the initial years, the student branch mainly focused on workshops and technical talks. 
+</p>
+    </div>
+    <br>
+    <br>
+    
+    <div class="album py-5 bg-light">
+    <div class="container">
+    <h1>GALLERY OF EVENTS</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                 
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                 
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Image</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                 
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 useful-links text-center">
+            <div class="title">
+              USEFUL LINKS
+            </div>
+            <div class="useful-links">
+              <a href="..." target="blank">INSTAGRAM</a>
+              <br>
+              <a href="..." target="blank">IEEE</a>
+              <span>|</span>
+              <a href="..." target="blank">
+                LinkedIn
+              </a>
+              <span>|</span>
+              <a href="..." target="blank">
+                PES SECTOR
+              </a>
+              <br>
+              <a href="..." target="blank">
+                IEEE STUDENT
+              </a>
+              <span>|</span>
+              <a href="..." target="blank">
+                Facebook
+              </a>
+              <br>
+              <a href="https://www.bmsce.ac.in" target="blank">
+                BMS College of Engineering
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center contact-us" id="contactUs">
+            <div class="title">
+              CONTACT US
+            </div>
+            <div class="contact-info"> 
+              <i class="fa fa-user"></i> Chairperson
+              <br>+910101010101/080-00000000
+              <a href="mailto:abc_bmsce@gmail.com" target="blank" style="color:#ffffff">
+                <i class="fa fa-envelope"></i> bms_ieee@gmail.com <br>
+              </a>
+              <i class="fa fa-map-marker"></i> P.O. Box No.: 1908, Bull Temple
+              Road, Bangalore - 560 019
+            </div>
+            <div class="title">
+              <a data-toggle="modal" data-target="#feedback-modal">
+                GIVE FEEDBACK
+              </a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--Social Media links-->
+        <div class="row justify-content-center">
+          <div class="social-media text-center col-md-2">
+            <a href="http://www.facebook.com/ieee.bmsce" target="blank">
+              <i class="fa fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://instagram.com/bmsce_ieee?igshid=vjk1g83w0cu8" target="blank">
+              <i class="fa fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://github.com/BMSCE-IEEE/" target="blank">
+              <i class="fa fa-github fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </body>
+</html>
