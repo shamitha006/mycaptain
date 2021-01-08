@@ -1,0 +1,63 @@
+.wrapper{
+	margin-top: 25px;
+}
+.wrapper h1{
+	font-family: 'Allura', cursive;
+	font-size: 52px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.about{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.about .about_member{
+	background: #fff;
+	margin: 5px;
+	marker-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+}
+h1{
+	font-family: 'Teko', sans-serif;
+}
+.about .about_image img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+	}
+	p{
+		margin-top: 10px;
+	}
+	
+	.container-fluid .navbar-brand img{
+		margin-left: 28px;
+	}
+	.navbar-nav .nav-item a{
+		font-size: 25px;
+	}
+	.imagination p{
+		font-size: 28px;
+		font-family: 'Yellowtail', cursive;
+	}
+	.about .about_member p{
+	 font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Patrick Hand', cursive;
+text-decoration-color: $blue-800;
+	}
+	.container-fluid .row .col-md-6 .title{
+		margin-top: 15px;
+	}
