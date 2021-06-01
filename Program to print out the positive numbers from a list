@@ -1,0 +1,11 @@
+nums=list()
+c=0
+n=int(input("Enter the number of elements in the list"))
+while c<n:
+    j=int(input("Enter a number into the list"))
+    nums.append(j)
+    c=c+1
+print(nums)
+for i in nums:
+    if i>0:
+        print(i,end=",")
